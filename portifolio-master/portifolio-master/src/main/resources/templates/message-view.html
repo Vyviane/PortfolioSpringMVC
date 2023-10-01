@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+            background-color: rgb(98, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.187);
+            width: 60vh;
+            height: 80vh;
+            color:#fff;
+            border-radius: 4px;
+        }
+        p{
+            margin-top: 1vh;
+            text-decoration: none;
+            color:#fff;
+            margin-left: 64px;
+            
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        img{
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="img">
+            <img src="https://avatars.githubusercontent.com/u/81928036?s=400&u=8955b2d6f289f56aa570b2114393feb28e2ec517&v=4"style="width:250px; height:300px" />        <h1 th:text="${Nome}"></h1>
+        </div>
+        <p th:text="${Tel}"></p>
+        <p th:text="${Email}"></p>
+        <p th:text="${DataNasc}"></p>
+        <a href="https://github.com/Vyviane"><p th:text="${Github}"> </p></a>
+        <a href="https://www.linkedin.com/in/vyvianesouza/"><p th:text="${Linkedin}"></p></a>
+    </div>       
+</body>
+</html>
